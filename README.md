@@ -5,7 +5,7 @@ A file extractor to mimic a Bash Bunny payload
 
 In the most basic sense, this script "steals" files from a computer. The purpose is to highlight and educate on the importance of locking down your computer before you leave your computer or workstation. Leaving your computer unattended leaves you vulnerable to attacks that compromises your files
 
-Placing the .exe in a flash drive allows someone to run the attack on any windows machine. When ran, the script creates a "loot" directory with subdirectories for the desktop, documents, and pictures loot. The script then copies all the files and folders from the desktop, documents, and pictures and puts them in the corresponding loot folders
+Placing the script in a flash drive allows someone to run the attack on any windows machine. When ran, the script creates a "loot" directory with subdirectories for the desktop, documents, and pictures loot. The script then copies all the files and folders from the desktop, documents, and pictures and puts them in the corresponding loot folders
 
 ## Inspiration:
 
