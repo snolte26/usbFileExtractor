@@ -1,3 +1,4 @@
+from tqdm import tqdm
 import os
 import shutil
 
@@ -27,7 +28,7 @@ def extracting(dest, desk, doc, pic):
     pictures = os.path.dirname(os.path.abspath(__file__)) + "\\" + "loot" + "\\" + "pictures"
 
     # For each item in the list of items,
-    for f in desktopList:
+    for f in tqdm(desktopList):
         srcs = desk + "\\" + f
         des = desktop + "\\" + f
 
@@ -42,7 +43,7 @@ def extracting(dest, desk, doc, pic):
         except:
             pass
 
-    for f in documentsList:
+    for f in tqdm(documentsList):
         srcs = desk + "\\" + f
         des = documents + "\\" + f
 
@@ -55,7 +56,7 @@ def extracting(dest, desk, doc, pic):
         except:
             pass
 
-    for f in picturesList:
+    for f in tqdm(picturesList):
         srcs = desk + "\\" + f
         des = pictures + "\\" + f
 
@@ -87,4 +88,5 @@ def main():
     extracting(dest, desktop, documents, pictures)
 
 
-main()
+if __name__ == '__main__':
+    main()
